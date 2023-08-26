@@ -1,3 +1,3 @@
-const EMAIL = "marek.drag.dev@gmail.com";
+const EMAIL = "marek.drag73@gmail.com";
 
 export default EMAIL;
