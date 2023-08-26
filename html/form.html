@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz zgłoszeniowy</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <form
+        id="contactform"
+        action="https://formsubmit.io/send/marek.drag73@gmail.com"
+        method="POST"
+      >
+        <input
+          name="_redirect"
+          type="hidden"
+          id="name"
+          value="https://index.html"
+        />
+        <input name="name" type="text" id="name" />
+        <input name="email" type="email" id="email" />
+        <textarea name="comment" id="comment" rows="3"></textarea>
+        <input name="_formsubmit_id" type="text" style="display: none" />
+        <input value="Submit" type="submit" />
+      </form>
+      <form>
+        <div class="form__item">
+          <label class="form__item__label" for="name">Imię i Nazwisko</label>
+          <input
+            id="name"
+            class="form__item__input"
+            placeholder="Wpisz twoje Imię i Nazwisko..."
+            type="texts"
+            required
+          />
+        </div>
+        <div class="form__item">
+          <label class="form__item__label" for="instagramName">
+            Twoja nazwa na instagramie (wymagana do kontaktu)
+          </label>
+          <input
+            id="instagramName"
+            class="form__item__input"
+            placeholder="Wpisz twoją nazwę na instagramie..."
+            required
+          />
+        </div>
+        <div class="form__item">
+          <label class="form__item__label" for="email">
+            Adres e-mail (dodatkowo do kontaktu)
+          </label>
+          <input
+            id="email"
+            class="form__item__input"
+            placeholder="Wpisz twój adres e-mail..."
+            required
+          />
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">
+            Czy masz ukończone 18 lat? (wymagane)
+          </span>
+
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="isAdult" value="tak" />
+            Tak
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="isAdult" value="nie" />
+            Nie
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">
+            Masz już doświadczenie w zarabianiu przez internet?
+          </span>
+          <div class="form__item__answer"></div>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="haveExperience" value="tak" />
+            Tak
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="haveExperience" value="nie" />
+            Nie
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">W jakim kraju mieszkasz?</span>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="country" value="Polska" />
+            Polska
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="country" value="Niemcy" />
+            Niemcy
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="country" value="Holandia" />
+            Holandia
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="country" value="Anglia" />
+            Anglia
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="country" value="Inne" />
+            Inne
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label"> Czym się aktualnie zajmujesz? </span>
+          <label class="form__item__label--checkbox">
+            <input type="checkbox" name="status" value="Pracuję na etacie" />
+            Pracuję na etacie
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="checkbox" name="status" value="Jestem studentem" />
+            Jestem studentem
+          </label>
+          <label class="form__item__label--checkbox">
+            <input
+              type="checkbox"
+              name="status"
+              value="Prowadzę własny biznes"
+            />
+            Prowadzę własny biznes
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="checkbox" name="status" value="Chodzę do szkoły" />
+            Chodzę do szkoły
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">
+            Ile miesięcznie chciałbyś zarabiać pracując online ?
+          </span>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="earnings" value="Powyżej 20tyś zł/msc" />
+            Powyżej 20tyś zł/msc
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="earnings" value="12-20tyś zł/msc" />
+            12-20tyś zł/msc
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="earnings" value="5-12tyś zł/msc" />
+            5-12tyś zł/msc
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="earnings" value="3-5tyś zł/msc" />
+            3-5tyś zł/msc
+          </label>
+          <label class="form__item__label--checkbox">
+            <input
+              type="radio"
+              name="earnings"
+              value="Chciałbym sobie dorobić"
+            />
+            Chciałbym sobie dorobić
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">
+            Jakie są 3 najważniejsze powody, dla których chciałbyś zacząć ze mną
+            współpracować?
+          </span>
+          <label class="form__item__label--checkbox">
+            <input
+              type="checkbox"
+              name="reasons"
+              value="Możliwość rozwoju marki osobistej"
+            />
+            Możliwość rozwoju marki osobistej
+          </label>
+          <label class="form__item__label--checkbox">
+            <input
+              type="checkbox"
+              name="reasons"
+              value="Chęć rzucenia pracy na etacie"
+            />
+            Chęć rzucenia pracy na etacie
+          </label>
+          <label class="form__item__label--checkbox">
+            <input
+              type="checkbox"
+              name="reasons"
+              value="Edukacja i zarabianie poprzez trading/giełdę/inwestycje"
+            />
+            Edukacja i zarabianie poprzez trading/giełdę/inwestycje
+          </label>
+          <label class="form__item__label--checkbox">
+            <input
+              type="checkbox"
+              name="reasons"
+              value="Otaczanie się ludźmi o podobnych zainteresowaniach i celach"
+            />
+            Otaczanie się ludźmi o podobnych zainteresowaniach i celach
+          </label>
+          <label class="form__item__label--checkbox">
+            <input
+              type="checkbox"
+              name="reasons"
+              value="Działanie w marketingu sieciowym i dochód pasywny"
+            />
+            Działanie w marketingu sieciowym i dochód pasywny
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="checkbox" name="reasons" value="Rozwój osobisty" />
+            Rozwój osobisty
+          </label>
+          <label class="form__item__label--checkbox">
+            <input
+              type="checkbox"
+              name="reasons"
+              value="Uzyskanie wolności finansowej/czasowej/geograficznej"
+            />
+            Uzyskanie wolności finansowej/czasowej/geograficznej
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">
+            Ile jesteś w stanie zainwestować w swój rozwój oraz rozwój biznesu,
+            jeżeli miałoby Ci się to zwrócić kilkukrotnie w ciągu najbliższych
+            kilku miesięcy?
+          </span>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="money" value="800zł" />
+            800zł
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="money" value="3800zł" />
+            3800zł
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="money" value="7800zł" />
+            7800zł
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="money" value="Więcej niż 7800zł" />
+            Więcej niż 7800zł
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">
+            Ile dziennie możesz poświęcić na pracę z telefonu?
+          </span>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="time" value="1-2h dziennie" />
+            1-2h dziennie
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="time" value="2-4h dziennie" />
+            2-4h dziennie
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="time" value="4-6h dziennie" />
+            4-6h dziennie
+          </label>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="time" value="więcej niż 6h dziennie" />
+            więcej niż 6h dziennie
+          </label>
+        </div>
+        <div class="form__item">
+          <span class="form__item__label">
+            Po przesłaniu ankiety i przeanalizowaniu potrzeb odezwę się do
+            wybranych osób na instagramie (sprawdź skrzynkę spam i zaobserwuj
+            profil, żeby nie zgubić wiadomości i żebym mógł łatwo Cię znaleźć)!
+          </span>
+          <label class="form__item__label--checkbox">
+            <input type="radio" name="info" value="info" />
+            Super, czekam na odpowiedź :D
+          </label>
+        </div>
+        <button type="submit" class="button">Wyślij formularz</button>
+      </form>
+    </main>
+    <footer>
+      <div class="logo">Jakub Perz</div>
+      <a href="../index.html" class="button button--outlined">Strona główna</a>
+      <div class="icons">
+        <a
+          class="icons_item"
+          target="_blank"
+          href="https://www.facebook.com/jakub.perz.3"
+        >
+          <img src="../assets/icons/facebook.svg" alt="facebook" />
+        </a>
+        <a
+          class="icons_item"
+          target="_blank"
+          href="https://www.instagram.com/jakub_perz/"
+        >
+          <img src="../assets/icons/instagram.svg" alt="instagram" />
+        </a>
+        <a
+          class="icons_item"
+          target="_blank"
+          href="https://www.tiktok.com/@jakub_22121"
+        >
+          <img src="../assets/icons/tiktok.svg" alt="tiktok" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

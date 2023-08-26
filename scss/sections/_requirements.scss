@@ -1,0 +1,45 @@
+.requirements {
+  margin-top: 100px;
+  grid-template-columns: 1fr 1fr;
+  &__text-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 10px;
+    width: 100%;
+  }
+  &__title {
+    color: $textPrimary;
+    font-size: 2.5rem;
+    &--small {
+      color: $primaryColor;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      letter-spacing: 3px;
+    }
+  }
+  p {
+    color: $textSecondary;
+    line-height: 1.5rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 30px;
+    &__item {
+      height: 200px;
+      border-radius: 10px;
+      border: 3px solid $primaryColor;
+      padding: 20px;
+      padding-top: 20px;
+      &__title {
+        color: $primaryColor;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
