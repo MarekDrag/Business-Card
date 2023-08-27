@@ -15,27 +15,22 @@
   <body>
     <main>
       <form
-        action="https://formsubmit.co/37a789abf7e3da5571b05210a253b954"
+        action="https://formsubmit.co/marek.drag.dev@gmail.com"
         method="POST"
       >
-        <!-- action="https://getform.io/f/dbf9916e-13c5-419b-a138-650a9a5bf623" -->
-        <input type="text" name="name" />
         <input
           type="hidden"
           name="_next"
           value="https://marekdrag.github.io/Business-Card/index.html"
         />
         <input type="hidden" name="_captcha" value="false" />
-        <button type="submit">Send</button>
-      </form>
-      <form>
         <div class="form__item">
           <label class="form__item__label" for="name">Imię i Nazwisko</label>
           <input
             id="name"
             class="form__item__input"
             placeholder="Wpisz twoje Imię i Nazwisko..."
-            type="texts"
+            type="text"
             required
           />
         </div>
@@ -48,6 +43,7 @@
             class="form__item__input"
             placeholder="Wpisz twoją nazwę na instagramie..."
             required
+            type="text"
           />
         </div>
         <div class="form__item">
@@ -56,6 +52,7 @@
           </label>
           <input
             id="email"
+            type="email"
             class="form__item__input"
             placeholder="Wpisz twój adres e-mail..."
             required
@@ -67,11 +64,11 @@
           </span>
 
           <label class="form__item__label--checkbox">
-            <input type="radio" name="isAdult" value="tak" />
+            <input type="radio" name="isAdult" value="tak" required />
             Tak
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="isAdult" value="nie" />
+            <input type="radio" name="isAdult" value="nie" required />
             Nie
           </label>
         </div>
@@ -81,34 +78,34 @@
           </span>
           <div class="form__item__answer"></div>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="haveExperience" value="tak" />
+            <input type="radio" name="haveExperience" value="tak" required />
             Tak
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="haveExperience" value="nie" />
+            <input type="radio" name="haveExperience" value="nie" required />
             Nie
           </label>
         </div>
         <div class="form__item">
           <span class="form__item__label">W jakim kraju mieszkasz?</span>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="country" value="Polska" />
+            <input type="radio" name="country" value="Polska" required />
             Polska
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="country" value="Niemcy" />
+            <input type="radio" name="country" value="Niemcy" required />
             Niemcy
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="country" value="Holandia" />
+            <input type="radio" name="country" value="Holandia" required />
             Holandia
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="country" value="Anglia" />
+            <input type="radio" name="country" value="Anglia" required />
             Anglia
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="country" value="Inne" />
+            <input type="radio" name="country" value="Inne" required />
             Inne
           </label>
         </div>
@@ -140,19 +137,39 @@
             Ile miesięcznie chciałbyś zarabiać pracując online ?
           </span>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="earnings" value="Powyżej 20tyś zł/msc" />
+            <input
+              type="radio"
+              name="earnings"
+              value="Powyżej 20tyś zł/msc"
+              required
+            />
             Powyżej 20tyś zł/msc
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="earnings" value="12-20tyś zł/msc" />
+            <input
+              type="radio"
+              name="earnings"
+              value="12-20tyś zł/msc"
+              required
+            />
             12-20tyś zł/msc
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="earnings" value="5-12tyś zł/msc" />
+            <input
+              type="radio"
+              name="earnings"
+              value="5-12tyś zł/msc"
+              required
+            />
             5-12tyś zł/msc
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="earnings" value="3-5tyś zł/msc" />
+            <input
+              type="radio"
+              name="earnings"
+              value="3-5tyś zł/msc"
+              required
+            />
             3-5tyś zł/msc
           </label>
           <label class="form__item__label--checkbox">
@@ -160,6 +177,7 @@
               type="radio"
               name="earnings"
               value="Chciałbym sobie dorobić"
+              required
             />
             Chciałbym sobie dorobić
           </label>
@@ -229,19 +247,24 @@
             kilku miesięcy?
           </span>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="money" value="800zł" />
+            <input type="radio" name="money" value="800zł" required />
             800zł
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="money" value="3800zł" />
+            <input type="radio" name="money" value="3800zł" required />
             3800zł
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="money" value="7800zł" />
+            <input type="radio" name="money" value="7800zł" required />
             7800zł
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="money" value="Więcej niż 7800zł" />
+            <input
+              type="radio"
+              name="money"
+              value="Więcej niż 7800zł"
+              required
+            />
             Więcej niż 7800zł
           </label>
         </div>
@@ -250,19 +273,24 @@
             Ile dziennie możesz poświęcić na pracę z telefonu?
           </span>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="time" value="1-2h dziennie" />
+            <input type="radio" name="time" value="1-2h dziennie" required />
             1-2h dziennie
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="time" value="2-4h dziennie" />
+            <input type="radio" name="time" value="2-4h dziennie" required />
             2-4h dziennie
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="time" value="4-6h dziennie" />
+            <input type="radio" name="time" value="4-6h dziennie" required />
             4-6h dziennie
           </label>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="time" value="więcej niż 6h dziennie" />
+            <input
+              type="radio"
+              name="time"
+              value="więcej niż 6h dziennie"
+              required
+            />
             więcej niż 6h dziennie
           </label>
         </div>
@@ -273,7 +301,12 @@
             profil, żeby nie zgubić wiadomości i żebym mógł łatwo Cię znaleźć)!
           </span>
           <label class="form__item__label--checkbox">
-            <input type="radio" name="info" value="info" />
+            <input
+              type="radio"
+              name="info"
+              value="Super, czekam na odpowiedź :D"
+              required
+            />
             Super, czekam na odpowiedź :D
           </label>
         </div>
