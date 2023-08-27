@@ -41,6 +41,7 @@ form {
       border: none;
       border-radius: 10px;
       background-color: #333333;
+      color: $textPrimary;
       &::placeholder {
         color: $textSecondary;
       }

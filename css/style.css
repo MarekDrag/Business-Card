@@ -512,6 +512,7 @@ form .form__item__input {
   border: none;
   border-radius: 10px;
   background-color: #333333;
+  color: #fff;
 }
 form .form__item__input::-moz-placeholder {
   color: #7d7c7c;
