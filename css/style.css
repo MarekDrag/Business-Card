@@ -524,6 +524,9 @@ form .button {
   margin-top: 20px;
   border: none;
 }
+form .input--hidden {
+  display: none;
+}
 
 @media screen and (max-width: 500px) {
   form {
