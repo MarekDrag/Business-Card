@@ -38,3 +38,26 @@ var swiper = new Swiper(".swiper-opinions", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav__menu");
+const navLinks = document.querySelectorAll(".nav__menu__link");
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+document.addEventListener("click", (event) => {
+  const target = event.target;
+  if (!target.closest(".nav__menu") && !target.closest(".hamburger")) {
+    closeMenu();
+  }
+});

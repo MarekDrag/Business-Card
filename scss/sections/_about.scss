@@ -30,9 +30,10 @@
     color: $textSecondary;
     line-height: 1.5rem;
   }
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .about__text {
+    grid-row: 1;
+    margin-bottom: 50px;
   }
 }

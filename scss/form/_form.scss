@@ -76,6 +76,9 @@ form {
 }
 
 @media screen and (max-width: 800px) {
+  .form-header-wrapper {
+    flex-direction: column-reverse;
+  }
   form {
     border: none;
     width: 100%;

@@ -30,40 +30,51 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper main__wrapper">
+      <div class="header__wrapper">
         <h1 class="header__logo">Jakub Perz</h1>
-        <div class="burger-menu">
-          <div class="burger-menu__item"></div>
-          <div class="burger-menu__item"></div>
-          <div class="burger-menu__item"></div>
-        </div>
         <nav class="header__menu" role="navigation">
-          <a class="header__menu__item smooth-scroll" href="#moja-historia"
-            >Moja historia</a
-          >
-          <a class="header__menu__item" href="#czym-jest-grow-up?"
-            >Czym jest GROW UP?</a
-          >
-          <a class="header__menu__item" href="#">Jak to działa?</a>
-          <a class="header__menu__item" href="#">Dlaczego warto?</a>
-          <a class="header__menu__item" href="#wyniki">Wyniki</a>
-          <a class="header__menu__item" href="#opinie">Opinie</a>
-          <a class="header__menu__item" href="#wymagania">Wymagania</a>
-          <a class="button button--outlined" href="./formularz.html">
-            Współpracuj ze mną
-            <img
-              src="./assets/icons/arrowRight.svg"
-              alt="strzałka w prawo"
-              class="arrowRight"
-            />
-          </a>
+          <ul class="nav__menu">
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#moja-historia">
+                Moja historia
+              </a>
+            </li>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#czym-jest-grow-up?">
+                Czym jest GROW UP?
+              </a>
+            </li>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#">Jak to działa?</a>
+            </li>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#">Dlaczego warto?</a>
+            </li>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#wyniki">Wyniki</a>
+            </li>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#opinie">Opinie</a>
+            </li>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#wymagania">Wymagania</a>
+            </li>
+          </ul>
         </nav>
+        <div class="button-wrapper">
+          <a class="button" href="./formularz.html"> Dołącz do mnie </a>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
       </div>
     </header>
     <main class="container">
       <div class="main__wrapper">
         <section class="about section">
-          <img src="./assets/images/about.jpg" alt="" />
+          <img src="./assets/images/4.JPG" alt="" />
           <div class="about__text">
             <div class="about__text--small">Cześć, jestem</div>
             <h2 class="about__text__name">Jakub Perz</h2>
@@ -124,7 +135,7 @@
               SIEBIE ZAPROWADZI CIĘ NA SZCZYT!
             </div>
           </div>
-          <img src="./assets/images/my-history.jpg" />
+          <img src="./assets/images/3.jpg" />
         </section>
       </div>
       <section class="quote">
@@ -136,8 +147,6 @@
       <div class="main__wrapper">
         <section id="czym-jest-grow-up?" class="company section">
           <video
-            width="100%"
-            height="100%"
             autoplay="false"
             loop
             muted
