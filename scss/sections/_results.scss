@@ -9,7 +9,7 @@
     grid-template-columns: 1fr;
     align-content: center;
     row-gap: 1rem;
-    width: 60%;
+    width: 80%;
   }
   &__title {
     margin-bottom: 1rem;
@@ -32,7 +32,6 @@
 .swiper {
   margin-top: 50px;
   width: 70vw;
-
   .swiper-button-next,
   .swiper-button-prev {
     color: #fff;
@@ -46,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
   }
   .swiper-slide img {
     display: block;
@@ -54,15 +54,18 @@
     object-fit: cover;
   }
   .swiper-pagination-bullet {
-    width: 10px;
-    height: 4px;
-    border-radius: 20px;
     color: #fff;
-    opacity: 1;
+    opacity: 0.6;
     background-color: #fff;
   }
   .swiper-pagination-bullet-active {
     color: #fff;
     background: $primaryColor;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .results {
+    justify-items: center;
   }
 }

@@ -31,3 +31,15 @@
     border-radius: 10px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .opinions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    .swiper {
+      width: 70vw;
+      height: auto;
+    }
+  }
+}

@@ -26,10 +26,9 @@
   .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 30px;
+    gap: 30px;
     margin-top: 30px;
     &__item {
-      height: 200px;
       border-radius: 10px;
       border: 3px solid $primaryColor;
       padding: 20px;
@@ -40,6 +39,23 @@
         font-weight: 700;
         margin-bottom: 20px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .requirements {
+    justify-items: center;
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .requirements {
+    .cards {
+      grid-template-columns: 1fr;
     }
   }
 }

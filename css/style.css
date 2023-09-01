@@ -390,7 +390,7 @@ footer img {
   grid-template-columns: 1fr;
   align-content: center;
   row-gap: 1rem;
-  width: 60%;
+  width: 80%;
 }
 .results__title {
   margin-bottom: 1rem;
@@ -426,6 +426,7 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 }
 .swiper .swiper-slide img {
   display: block;
@@ -435,11 +436,8 @@ footer img {
      object-fit: cover;
 }
 .swiper .swiper-pagination-bullet {
-  width: 10px;
-  height: 4px;
-  border-radius: 20px;
   color: #fff;
-  opacity: 1;
+  opacity: 0.6;
   background-color: #fff;
 }
 .swiper .swiper-pagination-bullet-active {
@@ -447,19 +445,21 @@ footer img {
   background: #fedd02;
 }
 
+@media screen and (max-width: 1500px) {
+  .results {
+    justify-items: center;
+  }
+}
 .form-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
   margin-top: 100px;
-  height: 150px;
+  gap: 30px;
   background-color: #fedd02;
   border-radius: 10px;
-}
-.form-info b {
-  color: #dd9904;
+  padding: 1rem;
 }
 .form-info__text {
   font-size: 2rem;
@@ -509,6 +509,17 @@ footer img {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1000px) {
+  .opinions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .opinions .swiper {
+    width: 70vw;
+    height: auto;
+  }
+}
 .requirements {
   margin-top: 100px;
   grid-template-columns: 1fr 1fr;
@@ -538,12 +549,10 @@ footer img {
 .requirements .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  gap: 30px;
   margin-top: 30px;
 }
 .requirements .cards__item {
-  height: 200px;
   border-radius: 10px;
   border: 3px solid #fedd02;
   padding: 20px;
@@ -556,6 +565,19 @@ footer img {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .requirements {
+    justify-items: center;
+  }
+  .requirements .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 520px) {
+  .requirements .cards {
+    grid-template-columns: 1fr;
+  }
+}
 form {
   display: grid;
   grid-template-columns: 1fr;

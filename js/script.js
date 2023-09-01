@@ -1,11 +1,11 @@
 var swiper = new Swiper(".results-swiper", {
   effect: "coverflow",
   grabCursor: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   coverflowEffect: {
-    rotate: 30,
+    rotate: 0,
     stretch: 0,
     depth: 10,
     modifier: 1,
@@ -22,6 +22,11 @@ var swiper = new Swiper(".results-swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
   },
 });
 
