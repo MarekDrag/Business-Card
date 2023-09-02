@@ -106,8 +106,10 @@
     display: flex;
     align-items: center;
     .button {
-      margin-right: 30px;
+      margin-right: 1rem;
       padding: 10px;
+      font-size: 12px;
+      font-weight: 800;
     }
   }
 }

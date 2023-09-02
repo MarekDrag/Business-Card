@@ -39,7 +39,7 @@ img {
   -moz-column-gap: 80px;
        column-gap: 80px;
   width: 100%;
-  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -210,8 +210,10 @@ img {
     align-items: center;
   }
   .button-wrapper .button {
-    margin-right: 30px;
+    margin-right: 1rem;
     padding: 10px;
+    font-size: 12px;
+    font-weight: 800;
   }
 }
 footer {
@@ -246,6 +248,9 @@ footer img {
   height: 40px;
 }
 
+.about {
+  margin-top: 60px;
+}
 .about__text {
   display: grid;
   grid-template-columns: 1fr;
@@ -318,15 +323,14 @@ footer img {
   }
 }
 .quote {
-  margin-top: 100px;
   width: 100%;
-  height: 200px;
   background-color: #fedd02;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   align-content: center;
-  padding: 20px;
+  padding: 40px;
+  margin-bottom: 150px;
 }
 .quote__author {
   letter-spacing: 3px;
@@ -375,6 +379,43 @@ footer img {
   .company__text-wrapper {
     grid-row: 1;
     margin-bottom: 30px;
+  }
+}
+.how__text-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  row-gap: 1rem;
+  width: 100%;
+}
+.how__title {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.how__text {
+  color: #fedd02;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 3px;
+}
+.how p {
+  color: #7d7c7c;
+  line-height: 1.5rem;
+}
+.how iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .how {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .how iframe {
+    height: 400px;
   }
 }
 .results {
@@ -455,11 +496,11 @@ footer img {
   grid-template-columns: 1fr;
   justify-items: center;
   align-content: center;
-  margin-top: 100px;
   gap: 30px;
   background-color: #fedd02;
   border-radius: 10px;
   padding: 1rem;
+  margin-bottom: 150px;
 }
 .form-info__text {
   font-size: 2rem;
@@ -475,6 +516,41 @@ footer img {
   padding: 15px;
 }
 
+.why {
+  grid-template-columns: 60% 1fr;
+}
+.why__text-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  row-gap: 1rem;
+  width: 100%;
+}
+.why__title {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.why__text {
+  color: #fedd02;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 3px;
+}
+.why p {
+  color: #7d7c7c;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .why {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
 .opinions {
   grid-template-columns: 1fr 1fr;
 }
