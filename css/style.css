@@ -592,7 +592,7 @@ footer img {
     flex-direction: column-reverse;
   }
   .opinions .swiper {
-    width: 70vw;
+    width: 50%;
     height: auto;
   }
 }
