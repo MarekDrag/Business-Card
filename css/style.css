@@ -745,6 +745,7 @@ form .input--hidden {
 }
 .thanks {
   padding-bottom: 50px;
+  max-height: 50vh;
 }
 .thanks-header {
   display: flex;
