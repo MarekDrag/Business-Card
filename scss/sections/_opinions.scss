@@ -1,5 +1,6 @@
 .opinions {
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   &__text-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -24,22 +25,30 @@
     line-height: 1.5rem;
   }
   .swiper {
-    width: 30vw;
-    height: auto;
+    width: 70%;
+    max-width: 30vw;
+    height: 70%;
+    background: none;
   }
   .swiper-slide {
     border-radius: 10px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1500px) {
+  .opinions {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .opinions {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
     .swiper {
-      width: 50%;
-      height: auto;
+      width: 40%;
+      height: 90vh;
     }
   }
 }
