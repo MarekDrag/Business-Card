@@ -27,3 +27,20 @@
     border-radius: 0;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .interested {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    &__text-wrapper {
+      padding: 30px;
+    }
+    &__title {
+      font-size: 2rem;
+    }
+    p {
+      color: #000;
+      font-size: 1.25rem;
+    }
+  }
+}

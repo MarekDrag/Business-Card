@@ -1,10 +1,10 @@
-.results {
+.swiper-section {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 80px;
   width: 100%;
   margin-top: 100px;
-  margin-bottom: 0;
+  margin-bottom: -100px;
   &__text-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -58,13 +58,25 @@
 }
 
 @media screen and (max-width: 1500px) {
-  .results {
+  .swiper-section {
     justify-items: center;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .swiper {
-    width: 60vw;
+@media screen and (max-width: 800px) {
+  .swiper-section {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .swiper-section {
+    margin-bottom: 0;
+    &__title {
+      font-size: 1.5rem;
+      &--small {
+        font-size: 1rem;
+      }
+    }
   }
 }

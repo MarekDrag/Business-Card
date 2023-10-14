@@ -4,7 +4,7 @@ form {
   justify-items: center;
   max-width: 800px;
   width: 60%;
-  min-width: 400px;
+  min-width: 300px;
   margin: 0 auto;
   border: 2px solid $primaryColor;
   margin-top: 30px;
@@ -58,13 +58,20 @@ form {
 
 .form-header-wrapper {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  margin: 30px auto;
-  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 30px 0;
+  width: 100%;
+  gap: 30px;
+  .header__logo {
+    width: fit-content;
+  }
+  .button {
+    width: fit-content;
+    position: absolute;
+    left: 20px;
+  }
 }
 
 .form__title {
@@ -76,11 +83,11 @@ form {
 }
 
 @media screen and (max-width: 800px) {
-  .form-header-wrapper {
-    flex-direction: column-reverse;
-  }
   form {
     border: none;
     width: 100%;
+  }
+  .form-header-wrapper .button {
+    position: static;
   }
 }

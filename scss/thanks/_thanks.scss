@@ -1,6 +1,5 @@
 .thanks {
-  padding-bottom: 50px;
-  max-height: 50vh;
+  padding-bottom: 100px;
   &-header {
     display: flex;
     justify-content: center;
@@ -14,10 +13,11 @@
     gap: 100px;
     margin: 0 auto;
     margin-top: 100px;
-    img {
-      width: 400px;
+    .image {
+      width: 300px;
       height: auto;
       border-radius: 10px;
+      margin-top: 40px;
     }
   }
   &__text {
@@ -26,7 +26,6 @@
     align-content: center;
     gap: 20px;
     color: $textPrimary;
-    margin-top: 50px;
     b {
       color: $primaryColor;
     }
@@ -52,8 +51,9 @@
   .thanks-wrapper {
     grid-template-columns: 1fr;
     margin-top: 10px;
-    img {
-      width: 100%;
+    justify-items: center;
+    .image {
+      width: 50%;
     }
   }
 }

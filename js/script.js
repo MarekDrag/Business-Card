@@ -1,4 +1,4 @@
-var swiper = new Swiper(".results-swiper", {
+var swiper = new Swiper(".swiper", {
   effect: "coverflow",
   grabCursor: true,
   slidesPerView: 1,
@@ -27,20 +27,6 @@ var swiper = new Swiper(".results-swiper", {
     1200: {
       slidesPerView: 3,
     },
-  },
-});
-
-var swiper = new Swiper(".swiper-opinions", {
-  effect: "cards",
-  grabCursor: true,
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });
 

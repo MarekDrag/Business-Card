@@ -1,5 +1,6 @@
 .my-history {
   grid-template-columns: 60% 1fr;
+  align-items: center;
   &__text-wrapper {
     display: grid;
     grid-template-columns: 1fr;

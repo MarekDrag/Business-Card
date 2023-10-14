@@ -27,6 +27,9 @@
   width: 100%;
   &__item {
     list-style: none;
+    .button {
+      display: none;
+    }
   }
   &__link {
     color: $textSecondary;
@@ -64,7 +67,7 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .header__wrapper {
     justify-content: space-between;
     margin: 0 20px;
@@ -108,8 +111,17 @@
     .button {
       margin-right: 1rem;
       padding: 10px;
-      font-size: 12px;
+      font-size: 1rem;
       font-weight: 800;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button-wrapper a {
+    display: none;
+  }
+  .nav__menu__item .button {
+    display: block;
   }
 }
