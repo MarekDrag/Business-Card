@@ -60,6 +60,12 @@ img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .section {
+    margin-bottom: 70px;
+  }
+}
+
 ::-webkit-scrollbar {
   border: 2px solid $textPrimary;
   border-radius: 10px;

@@ -59,6 +59,11 @@ img {
     margin-right: 5%;
   }
 }
+@media screen and (max-width: 600px) {
+  .section {
+    margin-bottom: 70px;
+  }
+}
 ::-webkit-scrollbar {
   border: 2px solid #fff;
   border-radius: 10px;
@@ -689,7 +694,7 @@ form .input--hidden {
   margin-top: 100px;
 }
 .thanks-wrapper .image {
-  width: 300px;
+  width: 400px;
   height: auto;
   border-radius: 10px;
   margin-top: 40px;
@@ -709,6 +714,9 @@ form .input--hidden {
 }
 .thanks__text p {
   color: #7d7c7c;
+}
+.thanks__text p a {
+  color: #fedd02;
 }
 .thanks__text a {
   margin-top: 20px;
