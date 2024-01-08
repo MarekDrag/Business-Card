@@ -54,5 +54,3 @@ statusCheckboxes.forEach((item) => {
     console.log(inputValue);
   });
 });
-
-console.log(window.location);
